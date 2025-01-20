@@ -1,0 +1,32 @@
+@use '../../ui/styles/variables.scss' as variables;
+@use '../../ui/styles/mixins.scss' as mixins;
+
+.menu {
+    @include mixins.container; 
+    align-items: start;
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    gap: 45px;
+
+    &__item {
+        a {
+        text-decoration: none;
+        color: variables.$gray;
+        font-size: variables.$font-size-small;
+        font-weight: 500;
+
+        img {
+            margin-right: 20px;
+        }
+        }
+
+        &:hover {
+            a {
+            color: variables.$black;
+            }
+        }
+    }
+
+
+}
