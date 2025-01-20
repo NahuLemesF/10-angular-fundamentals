@@ -1,12 +1,27 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren, AfterViewInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-learn-more-section',
-  imports: [],
   templateUrl: './learn-more-section.component.html',
-  styleUrl: './learn-more-section.component.scss',
+  styleUrls: ['./learn-more-section.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class LearnMoreSectionComponent {
+export class LearnMoreSectionComponent implements AfterViewInit {
+  @ViewChildren('videoWrapper') wrappers!: QueryList<ElementRef>;
 
+  ngAfterViewInit(): void {
+    this.wrappers.forEach((wrapper) => {
+      const video = wrapper.nativeElement.querySelector('video') as HTMLVideoElement;
+
+      if (video) {
+        wrapper.nativeElement.addEventListener('mouseenter', () => {
+          video.play();
+        });
+
+        wrapper.nativeElement.addEventListener('mouseleave', () => {
+          video.pause();
+        });
+      }
+    });
+  }
 }

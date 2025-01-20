@@ -4,10 +4,11 @@ import { CreatorSectionComponent } from "./components/creator-section/creator-se
 import { FooterComponent } from "./components/footer/footer.component";
 import { ScrollWrapperComponent } from "./components/scroll-wrapper/scroll-wrapper.component";
 import { HeaderComponent } from "./components/header/header.component";
+import { MainSectionComponent } from "./components/main-section/main-section.component";
 
 @Component({
   selector: 'app-root',
-  imports: [PlayerSectionComponent, CreatorSectionComponent, FooterComponent, ScrollWrapperComponent, HeaderComponent], 
+  imports: [PlayerSectionComponent, CreatorSectionComponent, FooterComponent, ScrollWrapperComponent, HeaderComponent, MainSectionComponent], 
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
   encapsulation: ViewEncapsulation.None,

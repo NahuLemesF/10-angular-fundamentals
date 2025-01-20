@@ -11,14 +11,17 @@ import { IMenuItem } from '../../interfaces/IMenuItem';
   encapsulation: ViewEncapsulation.None,
 })
 export class MenuFooterComponent {
-  public menuImage1: IMenuItem[] = [
+  public menuItems1: string[] = ['Llama Group', 'For Creators', 'Learn', 'Press', 'Contact'];
+  public menuItems2: string[] = ['Legal Notice', 'Privacy Policy', 'General Terms of Use'];
+
+  public menuImageItems1: IMenuItem[] = [
     { url: './images/download-iphone-btn.avif', alt: 'Download on the App Store' },
     { url: './images/download-google-btn.avif', alt: 'Get it on Google Play' },
     { url: './images/download-legacy-btn.avif', alt: 'Download Legacy Player' },
     { url: './images/download-dev-btn.png',  alt: 'Legacy Player Developer' },
   ];
 
-  public menuImage2: IMenuItem[] = [
+  public menuImageItems2: IMenuItem[] = [
     { url: "./images/facebook-logo.svg", alt:"Facebook logo" },
     { url: "./images/instagram-logo.svg", alt:"Instagram logo" },
     { url: "./images/twitter-logo.svg", alt:"Twitter Logo" },

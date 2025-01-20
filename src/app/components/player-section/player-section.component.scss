@@ -43,9 +43,7 @@
         line-height: 32px;
     }
 
-    &__buttons {
-        @include mixins.container-gap(10px);
-    }
+
 
     &__button {
         border-radius: 10px;
@@ -63,33 +61,5 @@
         }
     }
 
-    &__download {
-        @include mixins.container(center);
-        align-items: flex-start;
-        flex-direction: column;
-        margin-top: 80px;
 
-        
-        img {
-            width: 180px;
-
-            &:hover {
-                transition: 0.3s;
-                box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.1);
-            }
-        }
-
-        p {
-            font-size: 19px;
-            font-weight: 500;
-            color: variables.$white;
-            padding: 20px 0;
-
-        }
-
-        div {
-            display: flex;
-            gap: 15px;
-        }
-    }
 }	
