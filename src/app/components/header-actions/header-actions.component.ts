@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { LanguageMenuComponent } from "../language-menu/language-menu.component";
 
 @Component({
   selector: 'app-header-actions',
   imports: [CommonModule, LanguageMenuComponent],
   templateUrl: './header-actions.component.html',
-  styleUrl: './header-actions.component.scss'
+  styleUrl: './header-actions.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class HeaderActionsComponent {
   public items: string[] = ["English", "French"];

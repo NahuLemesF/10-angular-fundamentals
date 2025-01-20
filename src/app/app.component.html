@@ -1,13 +1,13 @@
-<div class="handle-scroll" role="region" aria-label="Handle Scroll Section">
-    <app-header></app-header>
-    <app-hero></app-hero>
-</div>
+<app-header></app-header>
 
 <main role="main" aria-label="Main Content">
-    <div class="handle-scroll" role="region" aria-label="Handle Scroll Section">
+    <app-scroll-wrapper>
         <app-player-section></app-player-section>
-    </div>
-    <div class="handle-scroll" role="region" aria-label="Handle Scroll Section">
+    </app-scroll-wrapper>
+    <app-scroll-wrapper>
         <app-creator-section></app-creator-section>
-    </div>
+    </app-scroll-wrapper>
 </main>
+
+<app-footer></app-footer>
+

@@ -1,14 +1,16 @@
-import { Component } from '@angular/core';
-import { HeaderComponent } from './components/header/header.component';
-import { HeroComponent } from './components/hero/hero.component';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { PlayerSectionComponent } from "./components/player-section/player-section.component";
 import { CreatorSectionComponent } from "./components/creator-section/creator-section.component";
+import { FooterComponent } from "./components/footer/footer.component";
+import { ScrollWrapperComponent } from "./components/scroll-wrapper/scroll-wrapper.component";
+import { HeaderComponent } from "./components/header/header.component";
 
 @Component({
   selector: 'app-root',
-  imports: [HeaderComponent, HeroComponent, PlayerSectionComponent, CreatorSectionComponent], 
+  imports: [PlayerSectionComponent, CreatorSectionComponent, FooterComponent, ScrollWrapperComponent, HeaderComponent], 
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class AppComponent {
 }
