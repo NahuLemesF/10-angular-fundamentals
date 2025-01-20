@@ -65,6 +65,16 @@
     
     &__button {
         width: 140px;
+
+        &--image {
+            width: 25px;
+            color: variables.$light-gray;
+
+            &:hover {
+                transition: 0.3s;
+                transform: scale(1.1);
+            }
+        }
     }
 
     &__social {
@@ -83,14 +93,6 @@
                 color: variables.$gray;
             }
         }
-        img {
-            width: 25px;
-            color: variables.$light-gray;
 
-            &:hover {
-                transition: 0.3s;
-                transform: scale(1.1);
-            }
-        }
     }
 }
