@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-language-menu',
   imports: [],
   templateUrl: './language-menu.component.html',
-  styleUrl: './language-menu.component.scss'
+  styleUrl: './language-menu.component.scss',
+  encapsulation: ViewEncapsulation.None,
 })
 export class LanguageMenuComponent {
-  public items: string[] = ["English", "French"];
+  @Input() public items!: string[];
 }

@@ -1,5 +1,9 @@
 @use '../../ui/styles/variables.scss' as variables;
 
+:host {
+    display: block;
+}
+
 .header {
     &__language--list {
         list-style: none;

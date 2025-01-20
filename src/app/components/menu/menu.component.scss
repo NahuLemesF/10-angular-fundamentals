@@ -1,6 +1,10 @@
 @use '../../ui/styles/variables.scss' as variables;
 @use '../../ui/styles/mixins.scss' as mixins;
 
+:host {
+    display: block;
+}
+
 .menu {
     @include mixins.container; 
     align-items: start;
