@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './menu.component.scss'
 })
 export class MenuComponent {
-
+  public items: string[] = ["Player", "Creators", "Learn", "Press", "Jobs"];
 }

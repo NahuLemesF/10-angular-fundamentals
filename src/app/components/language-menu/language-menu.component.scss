@@ -1,0 +1,29 @@
+@use '../../ui/styles/variables.scss' as variables;
+
+.header {
+    &__language--list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+    
+      &__language--item {
+        padding: 8px 10px;
+        border-bottom: 1px solid variables.$gray;
+    
+        &:last-child {
+          border-bottom: none;
+        }
+    
+        a {
+          text-decoration: none;
+          color: variables.$black;
+          font-size: variables.$font-size-small;
+          display: block;
+    
+          &:hover {
+            color: variables.$gray;
+          }
+        }
+      }
+}
