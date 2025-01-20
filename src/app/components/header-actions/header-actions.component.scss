@@ -2,12 +2,6 @@
 @use '../../ui/styles/mixins.scss' as mixins;
 
 .header{
-    @include mixins.container(space-between);
-    padding: 20px;
-    padding-top: 60px;
-    width: 1460px;
-    margin: 0 auto;
-
     &__actions {
         @include mixins.container-gap(20px);
         position: relative;
@@ -67,33 +61,3 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
       }
     }  
-
-.menu {
-    @include mixins.container; 
-    align-items: start;
-    list-style: none; 
-    padding: 0;
-    margin: 0;
-    gap: 45px;
-
-    &__item {
-        a {
-        text-decoration: none;
-        color: variables.$gray;
-        font-size: variables.$font-size-small;
-        font-weight: 500;
-
-        img {
-            margin-right: 20px;
-        }
-        }
-
-        &:hover {
-            a {
-            color: variables.$black;
-            }
-        }
-    }
-
-
-}

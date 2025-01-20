@@ -2,29 +2,6 @@
     <nav aria-label="Main navigation">
         <app-menu></app-menu>
     </nav>
-
-    <div class="header__actions" aria-label="Header Actions">
-        <a href="#" class="header__link" aria-label="For Creators">For Creators</a>
-        <a href="#" class="header__button" aria-label="Contact us">Contact us</a>
-        <a href="#" class="header__language-selector" aria-expanded="false" aria-controls="language-menu" role="button"
-            aria-label="Select Language">
-            <i class="header__language--icon" aria-hidden="true">
-                <img src="./images/world-icon.svg" alt="#">
-            </i>
-            <i class="header__language-icon" aria-hidden="true">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" width="10" height="10">
-                    <path d="M 2 4.5 L 6 8.5 L 10 4.5" fill="none"
-                        stroke="var(--token-418da828-2706-4a03-8278-b089c280c66c, rgb(113, 113, 122))"
-                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                </svg>
-            </i>
-        </a>
-        <div id="language-menu" class="header__language-menu" hidden role="menu" aria-label="Language Menu">
-            <ul class="header__language--list">
-                <li class="header__language--item" role="menuitem"><a href="#">English</a></li>
-                <li class="header__language--item" role="menuitem"><a href="#">French</a></li>
-            </ul>
-        </div>
-    </div>
-
+    
+    <app-header-actions></app-header-actions>
 </header>
