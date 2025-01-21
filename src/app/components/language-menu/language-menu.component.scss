@@ -4,14 +4,15 @@
     display: block;
 }
 
-.header {
-    &__language--list {
+.language {
+
+    &__list {
         list-style: none;
         padding: 0;
         margin: 0;
       }
     
-      &__language--item {
+      &__item {
         padding: 8px 10px;
         border-bottom: 1px solid variables.$gray;
     
