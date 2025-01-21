@@ -26,13 +26,6 @@
         }
     }
 
-    &__title {
-        font-size: 12px;
-        font-weight: 700;
-        color: rgb(56, 56, 56);
-        margin-bottom: 20px;
-    }
-
     &__menu {
         list-style: none;
         padding: 0;
@@ -58,41 +51,7 @@
         &--buttons {
             gap: 2px;
         }
-
-        
-
-    }
-    
-    &__button {
-        width: 140px;
-
-        &--image {
-            width: 25px;
-            color: variables.$light-gray;
-
-            &:hover {
-                transition: 0.3s;
-                transform: scale(1.1);
-            }
-        }
     }
 
-    &__social {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-rows: repeat(2, auto);  
 
-        li {
-            display: flex;
-            align-items: center;
-            font-size: variables.$font-size-small;
-            color: variables.$light-gray;
-            cursor: pointer;
-
-            &:hover {
-                color: variables.$gray;
-            }
-        }
-
-    }
 }

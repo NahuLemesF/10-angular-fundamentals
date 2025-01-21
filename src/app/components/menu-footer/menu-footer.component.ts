@@ -2,10 +2,12 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { SubMenuComponent } from "../sub-menu/sub-menu.component";
 import { SubMenuImageComponent } from "../sub-menu-image/sub-menu-image.component";
 import { IMenuItem } from '../../interfaces/IMenuItem';
+import { WinampLogoComponent } from "../winamp-logo/winamp-logo.component";
+import { ColumnFooterComponent } from "../column-footer/column-footer.component";
 
 @Component({
   selector: 'app-menu-footer',
-  imports: [SubMenuComponent, SubMenuImageComponent],
+  imports: [WinampLogoComponent, ColumnFooterComponent],
   templateUrl: './menu-footer.component.html',
   styleUrl: './menu-footer.component.scss',
   encapsulation: ViewEncapsulation.None,

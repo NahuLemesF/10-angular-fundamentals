@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-sub-menu',
@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './sub-menu.component.scss'
 })
 export class SubMenuComponent {
-  @Input() public items!: string[];
+  public titleClass = input<string>();
+  public items = input<string[]>();
 }

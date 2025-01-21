@@ -1,9 +1,5 @@
-<menu class="footer__menu">
-    @for (item of items; track $index) {
-    @if ($index == 0) {
-    <li class="footer__list"><a href="#">{{item}}</a></li>
-    } @else {
+<menu class={{titleClass()}}>
+    @for (item of items(); track $index) {
     <li><a href="#">{{item}}</a></li>
     }
-}
 </menu>
