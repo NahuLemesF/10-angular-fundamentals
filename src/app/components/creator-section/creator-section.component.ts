@@ -1,11 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { CreatorButtonsComponent } from "../creator-buttons/creator-buttons.component";
 
 @Component({
   selector: 'app-creator-section',
-  imports: [],
   templateUrl: './creator-section.component.html',
-  styleUrl: './creator-section.component.scss',
+  styleUrls: ['./creator-section.component.scss'],
   encapsulation: ViewEncapsulation.None,
+  imports: [CreatorButtonsComponent],
 })
 export class CreatorSectionComponent {
 
